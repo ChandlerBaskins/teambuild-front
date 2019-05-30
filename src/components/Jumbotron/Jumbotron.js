@@ -1,7 +1,8 @@
 import React from "react";
 import "./jumbotron.css";
+import {Link} from 'react-router-dom';
 
-const Jumbotron = ({ onRouteChange }) => (
+const Jumbotron = () => (
   <div className="jumbo-container">
 
     <div className="rectangle-1" />
@@ -20,9 +21,7 @@ const Jumbotron = ({ onRouteChange }) => (
           </p>
 
         <div>
-            <a className="prefooter__button" href="#" onClick={onRouteChange}>
-                Get Started
-            </a>
+           <Link to='/apply' className="prefooter__button">Getting Started</Link>
         </div>
 
     </div>
